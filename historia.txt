@@ -1,0 +1,67 @@
+1- Você conhece Lucas e descobre que ele é seu vizino. Ele pergunta sopbre o bairro. O que vc faz?
+    r1 - comeca a conversar com ele
+    r2 - estranha o contato rapido, mas responde por educação
+    r3(meme) - ignora
+
+2- 
+    r1- 
+=========
+ final caminho neutro.
+  {
+    id: "neutro",
+    titulo: "Final Neutro",
+    descricao: "Você sobreviveu, mas sem grandes conquistas. Um caminho comum.",
+    condicao: null,
+    classe: "final-neutro",
+  },
+=========
+=== LINHA BOA ===
+
+1 - Você conhece Lucas e descobre que ele é seu vizino. Ele pergunta sopbre o bairro. O que você faz? 
+        você responde bem, com interesse e inicia uma conversar
+2 - Lucas começa a te mandar mensagens reptidamente perguntando onde você está. oq você faz:
+        Diz que não gosta de ser controlada
+3 - Lucas pergunta muitas vezes com quem você estava andando. Você:
+        Diz que é um assunto que não refere a Ele
+4 - Lucas diz que não gosta de algum dos seus amigos. Oq você ira fazer:
+        continuar saindo com meus amigos
+5 - Em uma discussão Lucas levanta a voz contra você. você ira :
+        pedir para ele falar com respeito com você
+6 - Lucas pega seu celular para ver suas mensagens. você:
+        pegar o celular de volta e dizer a ele que sua privacidade deve ser respeitada
+7 - Ele começa a dizer onde vocês vão e oq vão fazer. Como ira agir:
+        dizer que quer participar de todas as decisões do relacionamento
+8 - Lucas começa a te chingar em uma discussão. como irar agir perante isso:
+        dizer que não aceita ser tratada assim
+9 - Lucas começa a ser muito controlador em diversos aspectos. como você ira agir:
+        ter uma conversa sincera sobre oq está acontecendo
+10 - Depois de refletir muito vc percebe que o relacionamento não esta sendo saudável. Você PRECISA tomar uma decisão:
+        Decidir terminar o relacionamento e seguir a vida
+=== Moral ===
+Você percebe que Lucas agia de maneira doce, meiga, mas no fundo sempre tentava te controlar e foi isso que te fez terminar com ele.
+Com a ajudas dos seus amigos você agora vive uma vida em paz com sigo mesma
+(Essa historia não foi feita apenas para mulheres mas para todos. Todos devem se conscientizar sobre o abuso com as mulheres.)
+=== LINHA RUIM ===
+
+1 - Você conhece Lucas e descobre que ele é seu vizino. Ele pergunta sopbre o bairro. O que você faz?
+        você responde bem, com interesse e inicia uma conversar
+2 - Lucas começa a te mandar mensagens reptidamente perguntando onde você está. oq você faz:
+        responder normalmente
+3 - Lucas pergunta muitas vezes com quem você estava andando. Você:
+        explicar para ele tudo para evitar discussão
+4 - Lucas diz que não gosta de algum dos seus amigos. Oq você ira fazer:
+        Evitar sair com seu amigos para evitar problemas
+5 - Em uma discussão Lucas levanta a voz contra você. você ira:
+        ficar calada para evitar briga
+6 - Lucas pega seu celular para ver suas mensagens. você:
+        Deixar ele mecher no seu celular sem seu consentimento
+7 - Ele começa a dizer onde vocês vão e oq vão fazer. Como ira agir:
+        Aceitar para evitar futuras discussões
+8 - Lucas começa a te chingar em uma discussão. como irar agir perante isso:
+        Ignorar completamente
+9 - Lucas começa a ser muito controlador em diversos aspectos. como você ira agir:
+        tentar fingir que esta tudo certo com vc
+10 - Depois de refletir muito vc percebe que o relacionamento não esta sendo saudável. Você PRECISA tomar uma decisão:
+        decidir continuar com o namoro
+=== Moral ===
+Com essa decisão Lucas começou a te agredir fisicamente e até sexualmente chegando em uma área que n tinha mais volta. Apartir desse momento as agreções começaram a piorar, em determinado ponto você n sabia para onde ir, e foi ai que aconteceu uma tragédia. Você virou mais uma mulher na estatística de feminicidio.
