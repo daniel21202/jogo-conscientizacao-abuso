@@ -155,12 +155,12 @@ const Components = (function () {
           <div class="resultado-stats">
             <div class="stat stat-boa">
               <span class="stat-numero">${resultado.estado.pontosBons}</span>
-              <span class="stat-label">Sabedoria</span>
+              <span class="stat-label">Noção</span>
             </div>
             <div class="stat-separador"></div>
             <div class="stat stat-ruim">
               <span class="stat-numero">${resultado.estado.pontosRuins}</span>
-              <span class="stat-label">Risco</span>
+              <span class="stat-label">Ilução</span>
             </div>
           </div>
 
