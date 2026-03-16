@@ -62,7 +62,7 @@ const Components = (function () {
         </div>
         <div class="pontuacao-valores">
           <div class="pontuacao-item pontuacao-boa">
-            <span class="pontuacao-label">No</span>
+            <span class="pontuacao-label">Noção</span>
             <span class="pontuacao-numero">${estado.pontosBons}</span>
           </div>
           <div class="pontuacao-item pontuacao-ruim">
