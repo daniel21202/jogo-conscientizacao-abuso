@@ -1,7 +1,12 @@
-[ ] Criar uma conta no github
-[ ] baixar o git na sua maquina
-[ ] add a conta no github no seu terminal (fazer login, add credenciais para o seu github fincionar no seu ambiente local)
-[ ] criar no github um repositorio par esse projeto
-[ ] linkar esse projeto ao repositorio
-[ ] contar no netlify
-[ ] linkar projeto no netlify ao repositorio do github
+[x] Criar uma conta no github
+[x] baixar o git na sua maquina
+[x] add a conta no github no seu terminal (fazer login, add credenciais para o seu github fincionar no seu ambiente local)
+[x] criar no github um repositorio par esse projeto
+[x] linkar esse projeto ao repositorio
+[x] contar no netlify
+[x] linkar projeto no netlify ao repositorio do github
+=====================================================================================================
+caso precisar mudar algum codigo usar isso no terminal:
+    git add .
+    git commit -m "mudança feita"
+    git push.
