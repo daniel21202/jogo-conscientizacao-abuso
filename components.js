@@ -140,6 +140,7 @@ const Components = (function () {
       .join("");
 
     const iconeMap = {
+      otimo:`<svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" stroke="var(--cor-bom)" stroke-width="2"/><path d="M20 34 L28 42 L44 24" stroke="var(--cor-bom)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
       bom: `<svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" stroke="var(--cor-bom)" stroke-width="2"/><path d="M20 34 L28 42 L44 24" stroke="var(--cor-bom)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
       ruim: `<svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" stroke="var(--cor-ruim)" stroke-width="2"/><path d="M22 22 L42 42 M42 22 L22 42" stroke="var(--cor-ruim)" stroke-width="3" stroke-linecap="round"/></svg>`,
       neutro: `<svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" stroke="var(--cor-neutro)" stroke-width="2"/><line x1="20" y1="36" x2="44" y2="36" stroke="var(--cor-neutro)" stroke-width="3" stroke-linecap="round"/></svg>`,

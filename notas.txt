@@ -9,4 +9,4 @@
 caso precisar mudar algum codigo usar isso no terminal:
     git add .
     git commit -m "mudança feita"
-    git push.
+    git push
