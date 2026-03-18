@@ -21,6 +21,7 @@ const Engine = (function () {
     estado = {
       pontosBons: 0,
       pontosRuins: 0,
+      pontosOtimos: 0,
       historico: [],
     };
     return estado;
@@ -76,6 +77,10 @@ const Engine = (function () {
 
     for (const regra of pergunta.regrasProxima) {
       if (avaliarCondicao(regra)) {
+        // 👇 se for condição de ótimo, termina o jogo
+        if (regra.campo === "pontosOtimos") {
+          return null;
+        }
         return regra.proxima;
       }
     }
@@ -96,11 +101,13 @@ const Engine = (function () {
     const resposta = pergunta.respostas[respostaIndex];
     if (!resposta) throw new Error(`Resposta index ${respostaIndex} inválida`);
 
-    // Acumular pontos
+    // Acumular pontos corretamente
     if (resposta.tipo === "boa") {
       estado.pontosBons += resposta.pontos;
-    } else {
+    } else if (resposta.tipo === "ruim") {
       estado.pontosRuins += resposta.pontos;
+    } else if (resposta.tipo === "otimo") {
+      estado.pontosOtimos += resposta.pontos;
     }
 
     // Registrar no histórico

@@ -123,7 +123,7 @@ const Components = (function () {
         </div>
         <div class="historico-pontos">
           <span class="historico-badge historico-badge-${item.tipo}">
-            ${item.tipo === "boa" ? "+" : ""}${item.pontos} ${item.tipo === "boa" ? "sab." : "risco"}
+            ${item.tipo === "boa" ? "+" : ""}${item.pontos} ${item.tipo === "boa" ? "Noção." : "Ilução"}
           </span>
         </div>
       </div>
