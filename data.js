@@ -67,8 +67,8 @@ const PERGUNTAS = [
     sequencia: 2,
     texto: "Lucas começa a te mandar mensagens repetidamente perguntando onde você está. O que você faz?",
     respostas: [
-      { texto: "Diz que não gosta de ser controlada.", tipo: "boa", pontos: 1 },
       { texto: "Responde normalmente.", tipo: "ruim", pontos: 1 },
+      { texto: "Diz que não gosta de ser controlada.", tipo: "boa", pontos: 1 },
     ],
     regrasProxima: [
       { campo: "pontosBons", operador: ">", valor: 1, proxima: "3A" },
@@ -99,8 +99,8 @@ const PERGUNTAS = [
     sequencia: 3,
     texto: "Lucas pergunta muitas vezes com quem você estava andando. O que você faz?",
     respostas: [
-      { texto: "Diz que isso é um assunto pessoal.", tipo: "boa", pontos: 1 },
       { texto: "Explica tudo para evitar discussão.", tipo: "ruim", pontos: 1 },
+      { texto: "Diz que isso é um assunto pessoal.", tipo: "boa", pontos: 1 },
     ],
     regrasProxima: [
       { campo: "pontosBons", operador: ">", valor: 1, proxima: "4A" },
@@ -115,8 +115,8 @@ const PERGUNTAS = [
     sequencia: 3,
     texto: "Lucas pergunta muitas vezes com quem você estava andando. O que você faz?",
     respostas: [
-      { texto: "Ignora o que ele está perguntando.", tipo: "boa", pontos: 1 },
       { texto: "Explica tudo para evitar discussão.", tipo: "ruim", pontos: 1 },
+      { texto: "Ignora o que ele está perguntando.", tipo: "boa", pontos: 1 },
     ],
     regrasProxima: [
       { campo: "pontosBons", operador: ">", valor: 1, proxima: "4A" },
@@ -131,8 +131,8 @@ const PERGUNTAS = [
     sequencia: 4,
     texto: "Lucas diz que não gosta de alguns dos seus amigos. O que você faz?",
     respostas: [
-      { texto: "Continua saindo com seus amigos.", tipo: "boa", pontos: 1 },
       { texto: "Para de sair com eles para evitar discussão.", tipo: "ruim", pontos: 1 },
+      { texto: "Continua saindo com seus amigos.", tipo: "boa", pontos: 1 },
     ],
     regrasProxima: [
       { campo: "pontosBons", operador: ">", valor: 2, proxima: "5A" },
@@ -147,8 +147,8 @@ const PERGUNTAS = [
     sequencia: 4,
     texto: "Lucas diz que não gosta de alguns dos seus amigos. O que você faz?",
     respostas: [
-      { texto: "Sai com eles mesmo assim.", tipo: "boa", pontos: 1 },
       { texto: "Evita sair com seus amigos para evitar problemas.", tipo: "ruim", pontos: 1 },
+      { texto: "Sai com eles mesmo assim.", tipo: "boa", pontos: 1 },
     ],
     regrasProxima: [
       { campo: "pontosBons", operador: ">", valor: 2, proxima: "5A" },
@@ -163,8 +163,8 @@ const PERGUNTAS = [
     sequencia: 5,
     texto: "Em uma discussão Lucas levanta a voz contra você. O que você faz?",
     respostas: [
-      { texto: "Pede para ele falar com respeito.", tipo: "boa", pontos: 1 },
       { texto: "Fica calada para evitar briga.", tipo: "ruim", pontos: 1 },
+      { texto: "Pede para ele falar com respeito.", tipo: "boa", pontos: 1 },
     ],
     regrasProxima: [
       { campo: "pontosBons", operador: ">", valor: 3, proxima: "6A" },
@@ -179,8 +179,8 @@ const PERGUNTAS = [
     sequencia: 5,
     texto: "Em uma discussão Lucas levanta a voz contra você. O que você faz?",
     respostas: [
-      { texto: "Se afasta por um momento.", tipo: "boa", pontos: 1 },
       { texto: "Fica calada para evitar briga.", tipo: "ruim", pontos: 1 },
+      { texto: "Se afasta por um momento.", tipo: "boa", pontos: 1 },
     ],
     regrasProxima: [
       { campo: "pontosBons", operador: ">", valor: 3, proxima: "6A" },
@@ -227,8 +227,8 @@ const PERGUNTAS = [
     sequencia: 7,
     texto: "Ele começa a decidir onde vocês vão e o que vão fazer. Como você reage?",
     respostas: [
-      { texto: "Diz que quer participar das decisões.", tipo: "boa", pontos: 1 },
       { texto: "Deixa ele decidir.", tipo: "ruim", pontos: 1 },
+      { texto: "Diz que quer participar das decisões.", tipo: "boa", pontos: 1 },
     ],
     regrasProxima: [
       { campo: "pontosBons", operador: ">", valor: 5, proxima: "8A" },
@@ -243,8 +243,8 @@ const PERGUNTAS = [
     sequencia: 7,
     texto: "Ele começa a decidir onde vocês vão e o que vão fazer. Como você reage?",
     respostas: [
-      { texto: "Faz o que quer mesmo assim.", tipo: "boa", pontos: 1 },
       { texto: "Aceita para evitar discussões.", tipo: "ruim", pontos: 1 },
+      { texto: "Faz o que quer mesmo assim.", tipo: "boa", pontos: 1 },
     ],
     regrasProxima: [
       { campo: "pontosBons", operador: ">", valor: 5, proxima: "8A" },
@@ -291,8 +291,8 @@ const PERGUNTAS = [
     sequencia: 9,
     texto: "Lucas começa a ser muito controlador. O que você faz?",
     respostas: [
-      { texto: "Tem uma conversa sincera.", tipo: "boa", pontos: 1 },
       { texto: "Deixa porque acha que é amor.", tipo: "ruim", pontos: 1 },
+      { texto: "Tem uma conversa sincera.", tipo: "boa", pontos: 1 },
     ],
     regrasProxima: [
       { campo: "pontosBons", operador: ">", valor: 7, proxima: "10A" },
@@ -323,8 +323,8 @@ const PERGUNTAS = [
     sequencia: 10,
     texto: "Depois de refletir muito você percebe que o relacionamento não está saudável. O que decide?",
     respostas: [
-      { texto: "Terminar o relacionamento e seguir sua vida.", tipo: "boa", pontos: 1 },
       { texto: "Continuar o namoro.", tipo: "ruim", pontos: 1 },
+      { texto: "Terminar o relacionamento e seguir sua vida.", tipo: "boa", pontos: 1 },
     ],
     final: true,
   },
@@ -334,8 +334,8 @@ const PERGUNTAS = [
     sequencia: 10,
     texto: "Depois de refletir muito você percebe que o relacionamento não está saudável. O que decide?",
     respostas: [
-      { texto: "Ir embora e terminar o relacionamento.", tipo: "boa", pontos: 1 },
       { texto: "Continuar o namoro.", tipo: "ruim", pontos: 1 },
+      { texto: "Ir embora e terminar o relacionamento.", tipo: "boa", pontos: 1 },
     ],
     final: true,
   }
