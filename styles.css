@@ -21,6 +21,7 @@
   --cor-texto-sec: #8790a5;
   --cor-acento: #6c8cff;
   --cor-acento-hover: #8ba3ff;
+  --cor-otimo: #00fae9b6;
   --cor-bom: #00fae9b6;
   --cor-ruim: #ff0000af;
   --cor-neutro: #ffb300a8;
@@ -406,12 +407,6 @@ body {
   line-height: 1.2;
 }
 
-.final.otimo {
-  background-color: #00fae9b6;
-  color: #000;
-  padding: 20px;
-  border-radius: 10px;
-}
 
 .final-bom .resultado-titulo {
   color: var(--cor-bom);
