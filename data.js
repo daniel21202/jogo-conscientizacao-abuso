@@ -134,7 +134,7 @@ const PERGUNTAS = [
     sequencia: 3,
     texto: "Lucas pergunta muitas vezes com quem você estava andando. O que você faz?",
     respostas: [
-      { texto: "Explica tudo para evitar discussão.", tipo: "pessimo", pontos: 1 },
+      { texto: "Explica tudo para evitar discussão.", tipo: "ruim", pontos: 1 },
       { texto: "Ignora o que ele está perguntando.", tipo: "boa", pontos: 1 },
     ],
     regrasProxima: [
