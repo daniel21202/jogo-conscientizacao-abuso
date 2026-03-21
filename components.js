@@ -161,7 +161,7 @@ const Components = (function () {
             <div class="stat-separador"></div>
             <div class="stat stat-ruim">
               <span class="stat-numero">${resultado.estado.pontosRuins}</span>
-              <span class="stat-label">Ilução</span>
+              <span class="stat-label">Ilusão</span>
             </div>
           </div>
 
