@@ -66,7 +66,7 @@ const Components = (function () {
             <span class="pontuacao-numero">${estado.pontosBons}</span>
           </div>
           <div class="pontuacao-item pontuacao-ruim">
-            <span class="pontuacao-label">Ilução</span>
+            <span class="pontuacao-label">Ilusão</span>
             <span class="pontuacao-numero">${estado.pontosRuins}</span>
           </div>
         </div>
@@ -123,7 +123,7 @@ const Components = (function () {
         </div>
         <div class="historico-pontos">
           <span class="historico-badge historico-badge-${item.tipo}">
-            ${item.tipo === "boa" ? "+" : ""}${item.pontos} ${item.tipo === "bom","otimo" ? "Noção" : "Ilução"}
+            ${item.tipo === "boa" ? "+" : ""}${item.pontos} ${item.tipo === "bom"|| item.tipo === "otimo" ? "Noção" : "Ilução"}
           </span>
         </div>
       </div>

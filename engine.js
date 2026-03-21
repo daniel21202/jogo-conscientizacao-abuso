@@ -21,6 +21,7 @@ const Engine = (function () {
     estado = {
       pontosBons: 0,
       pontosRuins: 0,
+      pontosPessimos: 0,
       pontosOtimos: 0,
       historico: [],
     };
@@ -77,7 +78,7 @@ const Engine = (function () {
 
     for (const regra of pergunta.regrasProxima) {
       if (avaliarCondicao(regra)) {
-        // 👇 se for condição de ótimo, termina o jogo
+        // se for condição de ótimo, termina o jogo
         if (regra.campo === "pontosOtimos") {
           return null;
         }
@@ -109,6 +110,9 @@ const Engine = (function () {
     } else if (resposta.tipo === "otimo") {
       estado.pontosOtimos += resposta.pontos;
     }
+ /*  } else if (resposta.tipo === "pessimo") {
+  estado.pontosPessimos += resposta.pontos;
+}*/
 
     // Registrar no histórico
     estado.historico.push({

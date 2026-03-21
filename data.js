@@ -51,12 +51,15 @@ const PERGUNTAS = [
     respostas: [
       { texto: "Você responde bem, com interesse, e inicia uma conversa.", tipo: "boa", pontos: 1 },
       { texto: "Você responde sem muito entusiasmo.", tipo: "ruim", pontos: 1 },
+//      { texto: "comprimenter e sair sem falar com ele", tipo: "pessimo", pontos: 1},
       { texto: "Ignorar Lucas completamete ", tipo: "otimo", pontos: 10 },
+      
     ],
     regrasProxima: [
       { campo: "pontosOtimos", operador: ">=", valor: 10, proxima: "FINAL" }, // sem proxima
       { campo: "pontosBons", operador: ">", valor: 0, proxima: "2A" },
       { campo: "pontosRuins", operador: ">", valor: 0, proxima: "2B" },
+//      { campo: "pontosPessimos", operador: ">", valor: 0, proxima: "2C"}
     ],
     padrao: "2A",
     final: false,
@@ -87,12 +90,28 @@ const PERGUNTAS = [
       { texto: "Pergunta por que ele quer saber onde você está.", tipo: "ruim", pontos: 1 },
     ],
     regrasProxima: [
-      { campo: "pontosBons", operador: ">", valor: 0, proxima: "3A" },
+      { campo: "pontosBons", operador: ">", valor: 1, proxima: "3A" },
       { campo: "pontosRuins", operador: ">", valor: 1, proxima: "3B" },
     ],
     padrao: "3A",
     final: false,
   },
+/*
+  {
+    id: "2C",
+    sequencia: 2,
+    texto: "Ao ignorar Lucas, ele começa a ti seguir. Oque você faz:",
+    respostas: [
+      { texto: "ligar para policia!", tipo: "boa", pontos: 1},
+      { texto: "mandar ele sair de perto de você", tipo: "pessimo", pontos: 1},
+    ],
+    regrasProxima: [
+      {campo: "pontosBons", operador: ">", valor: 1, proxima: "3D"},
+      {campo: "pontosPessimos", operador: ">", valor: 1, proxima: "3C"}
+    ],
+    padrao: "3C",
+    final: false,
+  },*/
 
   {
     id: "3A",
@@ -115,16 +134,49 @@ const PERGUNTAS = [
     sequencia: 3,
     texto: "Lucas pergunta muitas vezes com quem você estava andando. O que você faz?",
     respostas: [
-      { texto: "Explica tudo para evitar discussão.", tipo: "ruim", pontos: 1 },
+      { texto: "Explica tudo para evitar discussão.", tipo: "pessimo", pontos: 1 },
       { texto: "Ignora o que ele está perguntando.", tipo: "boa", pontos: 1 },
     ],
     regrasProxima: [
       { campo: "pontosBons", operador: ">", valor: 1, proxima: "4A" },
-      { campo: "pontosRuins", operador: ">", valor: 1, proxima: "4B" },
+      { campo: "pontoRuins", operador: ">", valor: 1, proxima: "4B" },
     ],
     padrao: "4A",
     final: false,
   },
+/*
+  {
+    id: "3C",
+    sequencia: 3,
+    texto: "", 
+    respostas: [
+      {texto: "", tipo: "pessimo", pontos: 1},
+      {texto: "", tipo: "boa", pontos: 1},
+    ] ,
+    regrasProxima: [
+      { campo: "pontosBons", operador: ">", valor: 1, proxima: "4C"},
+      { campo: "pontosPessimos", operador: ">", valor: 1, proxima: "4D"},
+    ],
+    padrao: "4C",
+    final: false,
+  },
+
+  {
+    
+    id: "3D",
+    sequencia: 3,
+    texto: "", 
+    respostas: [
+      {texto: "", tipo: "pessimo", pontos: 1},
+      {texto: "", tipo: "boa", pontos: 1},
+    ] ,
+    regrasProxima: [
+      { campo: "pontosBons", operador: ">", valor: 1, proxima: "4C"},
+      { campo: "pontosPessimos", operador: ">", valor: 1, proxima: "4D"},
+    ],
+    padrao: "4D",
+    final: false,
+  },*/
 
   {
     id: "4A",
@@ -158,6 +210,39 @@ const PERGUNTAS = [
     final: false,
   },
 
+ /* {
+    id: "4C",
+    sequencia: 4,
+    texto: "", 
+    respostas: [
+      {texto: "", tipo: "pessimo", pontos: 1},
+      {texto: "", tipo: "boa", pontos: 1},
+    ] ,
+    regrasProxima: [
+      { campo: "pontosBons", operador: ">", valor: 1, proxima: "5C"},
+      { campo: "pontosPessimos", operador: ">", valor: 1, proxima: "5D"},
+    ],
+    padrao: "5C",
+    final: false,
+  },*/
+  
+ /* {
+    id: "4D",
+    sequencia: 4,
+    texto: "", 
+    respostas: [
+      {texto: "", tipo: "pessimo", pontos: 1},
+      {texto: "", tipo: "boa", pontos: 1},
+    ] ,
+    regrasProxima: [
+      { campo: "pontosBons", operador: ">", valor: 1, proxima: "5C"},
+      { campo: "pontosPessimos", operador: ">", valor: 1, proxima: "5D"},
+    ],
+    padrao: "5D",
+    final: false,
+  },*/
+  
+
   {
     id: "5A",
     sequencia: 5,
@@ -189,6 +274,39 @@ const PERGUNTAS = [
     padrao: "6B",
     final: false,
   },
+/*
+  {
+    id: "5C",
+    sequencia: 5,
+    texto: "", 
+    respostas: [
+      {texto: "", tipo: "pessimo", pontos: 1},
+      {texto: "", tipo: "boa", pontos: 1},
+    ] ,
+    regrasProxima: [
+      { campo: "pontosBons", operador: ">", valor: 3, proxima: "6C"},
+      { campo: "pontosPessimos", operador: ">", valor: 3, proxima: "6D"},
+    ],
+    padrao: "6C",
+    final: false,
+  },
+
+  {
+    id: "5D",
+    sequencia: 5,
+    texto: "", 
+    respostas: [
+      {texto: "", tipo: "pessimo", pontos: 1},
+      {texto: "", tipo: "boa", pontos: 1},
+    ] ,
+    regrasProxima: [
+      { campo: "pontosBons", operador: ">", valor: 3, proxima: "6C"},
+      { campo: "pontosPessimos", operador: ">", valor: 3, proxima: "6D"},
+    ],
+    padrao: "6D",
+    final: false,
+  },*/
+  
 
   {
     id: "6A",
@@ -221,6 +339,40 @@ const PERGUNTAS = [
     padrao: "7B",
     final: false,
   },
+/*
+  {
+    id: "6C",
+    sequencia: 6,
+    texto: "", 
+    respostas: [
+      {texto: "", tipo: "pessimo", pontos: 1},
+      {texto: "", tipo: "boa", pontos: 1},
+    ] ,
+    regrasProxima: [
+      { campo: "pontosBons", operador: ">", valor: 4, proxima: "7C"},
+      { campo: "pontosPessimos", operador: ">", valor: 4, proxima: "7D"},
+    ],
+    padrao: "7C",
+    final: false,
+  },
+
+  {
+    id: "6D",
+    sequencia: 6,
+    texto: "", 
+    respostas: [
+      {texto: "", tipo: "pessimo", pontos: 1},
+      {texto: "", tipo: "boa", pontos: 1},
+    ] ,
+    regrasProxima: [
+      { campo: "pontosBons", operador: ">", valor: 4, proxima: "7C"},
+      { campo: "pontosPessimos", operador: ">", valor: 4, proxima: "7D"},
+    ],
+    padrao: "7D",
+    final: false,
+  },
+  
+*/
 
   {
     id: "7A",
@@ -253,6 +405,39 @@ const PERGUNTAS = [
     padrao: "8B",
     final: false,
   },
+/*
+  {
+    id: "7C",
+    sequencia: 7,
+    texto: "", 
+    respostas: [
+      {texto: "", tipo: "pessimo", pontos: 1},
+      {texto: "", tipo: "boa", pontos: 1},
+    ] ,
+    regrasProxima: [
+      { campo: "pontosBons", operador: ">", valor: 5, proxima: "8C"},
+      { campo: "pontosPessimos", operador: ">", valor: 5, proxima: "8D"},
+    ],
+    padrao: "8C",
+    final: false,
+  },
+  
+  {
+    id: "7D",
+    sequencia: 7,
+    texto: "", 
+    respostas: [
+      {texto: "", tipo: "pessimo", pontos: 1},
+      {texto: "", tipo: "boa", pontos: 1},
+    ] ,
+    regrasProxima: [
+      { campo: "pontosBons", operador: ">", valor: 5, proxima: "8C"},
+      { campo: "pontosPessimos", operador: ">", valor: 5, proxima: "8D"},
+    ],
+    padrao: "8D",
+    final: false,
+  },
+  */
 
   {
     id: "8A",
@@ -285,6 +470,40 @@ const PERGUNTAS = [
     padrao: "9B",
     final: false,
   },
+/*
+  {
+    id: "8C",
+    sequencia: 8,
+    texto: "", 
+    respostas: [
+      {texto: "", tipo: "pessimo", pontos: 1},
+      {texto: "", tipo: "boa", pontos: 1},
+    ] ,
+    regrasProxima: [
+      { campo: "pontosBons", operador: ">", valor: 6, proxima: "9C"},
+      { campo: "pontosPessimos", operador: ">", valor: 6, proxima: "9D"},
+    ],
+    padrao: "9C",
+    final: false,
+  },
+
+  {
+    id: "8D",
+    sequencia: 8,
+    texto: "", 
+    respostas: [
+      {texto: "", tipo: "pessimo", pontos: 1},
+      {texto: "", tipo: "boa", pontos: 1},
+    ] ,
+    regrasProxima: [
+      { campo: "pontosBons", operador: ">", valor: 6, proxima: "9C"},
+      { campo: "pontosPessimos", operador: ">", valor: 6, proxima: "9D"},
+    ],
+    padrao: "9D",
+    final: false,
+  },
+  
+  */
 
   {
     id: "9A",
@@ -317,6 +536,39 @@ const PERGUNTAS = [
     padrao: "10B",
     final: false,
   },
+  /*
+
+  {
+    id: "9C",
+    sequencia: 9,
+    texto: "", 
+    respostas: [
+      {texto: "", tipo: "pessimo", pontos: 1},
+      {texto: "", tipo: "boa", pontos: 1},
+    ] ,
+    regrasProxima: [
+      { campo: "pontosBons", operador: ">", valor: 7, proxima: "10C"},
+      { campo: "pontosPessimos", operador: ">", valor: 7, proxima: "10D"},
+    ],
+    padrao: "10C",
+    final: false,
+  },
+  {
+    id: "9D",
+    sequencia: 9,
+    texto: "", 
+    respostas: [
+      {texto: "", tipo: "pessimo", pontos: 1},
+      {texto: "", tipo: "boa", pontos: 1},
+    ] ,
+    regrasProxima: [
+      { campo: "pontosBons", operador: ">", valor: 7, proxima: "10C"},
+      { campo: "pontosPessimos", operador: ">", valor: 7, proxima: "10D"},
+    ],
+    padrao: "10D",
+    final: false,
+  },
+  */
 
   {
     id: "10A",
@@ -338,7 +590,40 @@ const PERGUNTAS = [
       { texto: "Ir embora e terminar o relacionamento.", tipo: "boa", pontos: 1 },
     ],
     final: true,
-  }
+  },
+
+/* 
+  {
+    id: "10C",
+    sequencia: 10,
+    texto: "", 
+    respostas: [
+      {texto: "", tipo: "pessimo", pontos: 1},
+      {texto: "", tipo: "boa", pontos: 1},
+    ] ,
+    regrasProxima: [
+      { campo: "pontosBons", operador: ">", valor: 1},
+      { campo: "pontosPessimos", operador: ">", valor: 1},
+    ],
+    final: true,
+  },
+
+  {
+        id: "",
+    sequencia: ,
+    texto: "", 
+    respostas: [
+      {texto: "", tipo: "pessimo", pontos: 1},
+      {texto: "", tipo: "boa", pontos: 1},
+    ] ,
+    regrasProxima: [
+      { campo: "pontosBons", operador: ">", valor: 1},
+      { campo: "pontosPessimos", operador: ">", valor: 1},
+    ],
+    final: true,
+  },
+  */
+  
 
 ]
 
